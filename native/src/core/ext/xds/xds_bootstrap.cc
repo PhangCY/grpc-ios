@@ -33,6 +33,7 @@ bool XdsFederationEnabled() {
   bool parsed_value;
   bool parse_succeeded = gpr_parse_bool_value(value->c_str(), &parsed_value);
   return parse_succeeded && parsed_value;
+  return parse_succeeded && parsed_value;
 }
 
 }  // namespace grpc_core
